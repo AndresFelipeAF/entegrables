@@ -1,0 +1,405 @@
+/* Modificaciones generales */
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+
+
+/* Inicio grid */
+.grid{
+
+    display: grid;
+    grid-template-areas: 
+    "nav"
+    "header"
+    "main"
+    "footer" ;
+}
+
+
+/* fin grid */
+/* Inicio navegación  */
+nav{
+    grid-area: nav;
+    background-color:black;
+    flex-direction: column;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+nav img{
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+}
+nav ul{
+    
+    list-style-type: none;
+    padding-bottom: 10px;
+}
+nav ul li{
+    
+    margin: 5px;
+    display: inline;
+
+}
+
+nav ul li a {
+    color: white;
+    font-size: medium;
+}
+/* Fin navegación */
+/*  Empieza header */
+header{
+    /* grid */
+    grid-area: header;
+    /* imagen fondo  */
+    background-image: url(../public/background-header.jpg);
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header div{
+    background-color: black;
+    border: 3px solid white;
+    margin: 10px;
+    padding: 5px;
+    color: white;
+}
+
+header div h2{
+   margin: 10px;
+   text-align: center;
+
+}
+header div p{
+    text-align: center;
+    margin: 10px;
+}
+header div a {
+    display: inline-block;
+    margin: 10px;
+    padding: 5px;
+    border: 2px solid rgb(36, 114, 224);
+    background-color: rgb(36, 114, 224);
+    color:white;
+    font-size: medium;
+    margin-left: 30%;
+}
+/* fin header */
+/* Empieza main */
+/* grid main */
+.grid-hijo{
+    display: grid;
+    grid-template-areas:
+    "about"
+    "work";
+}
+/* parte work  */
+main{
+    grid-area: main;
+}
+.work{
+    grid-area: work;
+}
+main .work {
+    background-color:black;
+    text-align: center;
+}
+main .work h2{
+    padding: 20px;
+    color: rgba(255, 255, 255, 0.916);
+    font-size:25px;
+}
+
+main .work-flex {
+    display:flex; 
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* Inicio iframe trabajos */
+main iframe{
+   padding: 20px 15px;
+   padding-bottom: 30px;
+   
+}
+/* Fin iframe trabajos  */
+
+/* Inicio About me  */
+.about {
+    grid-area: about;
+    background-image: url(../public/background-about.jpeg);
+    background-size: 100% 100%;
+}
+.about h3{
+    padding: 15px;
+    padding-bottom: 0;
+    text-align: center;
+}
+main  img{
+    width: 150px;
+    height: 150px;
+    margin: 15px;
+}
+main .about-flex{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    align-items: center; 
+   
+}
+main .about-flex p {
+    color: black;
+    text-align: justify;
+    margin: 20px;
+
+}
+/* Fin about me  */
+
+/* Incio footer */
+footer{
+    grid-area: footer;
+    background-color: black;
+}
+footer h3{
+    text-align: center;
+    color: white;
+    font-size: medium;
+    padding: 20px;
+    padding-bottom: 10px;
+}
+
+footer ul{
+   padding: 15px;
+    list-style-type: none;
+    text-align: center;
+}
+
+footer li{
+    display:inline;
+    margin: 10px;
+    
+}
+footer li a {
+    color: white;
+    font-size:small;
+}
+/* fin footer */
+
+/* pagina 2 contact me */
+/* mapa */
+ main .iframe{
+     background-color: midnightblue;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     padding: 15px;
+ }
+ .iframe iframe{
+     width: 300px;
+    height: 200px;
+ }
+ main .iframe p{
+     color: white;
+     font-size: small;
+     text-align: center;
+ }
+ /* fin mapa */
+ /* Formulario  */
+ main .form h2{
+     text-align: center;
+     color: black;
+     font-size: 40px;
+     padding: 20px;
+ }
+ main .form{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+    
+     background-color: aquamarine;
+ }
+ main form{
+     margin: 15px 0;
+     padding: 20px;
+     background-color: rgb(42, 124, 97);
+     border: 3px solid black;
+     width: 200px;
+ }
+ main form .solicitud{
+    width: 200px;
+ }
+ main form input {
+     display: block;
+     margin: 5px;
+     
+ }
+ /* fin pagina 2 y formulario  */
+
+ /* pagina 3 hobbies */
+
+ .hobbies{
+     background-color: orange;
+
+ }
+ .hobbies h1{
+     text-align: center;
+     color: black;
+     font-size: 40px;
+ }
+ .hobbies .table{
+     padding: 30px;
+     display: flex;
+     justify-content: center;
+ }
+
+ .hobbies .table img{
+     width: 100px;
+     height: 100px;
+ }
+ .hobbies .table p{
+     text-align: center;
+     font-size: medium;
+ }
+/* Fin pagina 3 hobbies */
+
+ /* Incio pagina 4 courses  */
+ .courses{
+     background-color: white;
+ }
+ .courses h1{
+     text-align: center;
+     color: red;
+     font-size: 40px;
+ }
+ .courses .flex-courses{
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-around;
+     align-items: center;
+ }
+ .courses .wrap{
+     margin: 15px;
+     height: 300px;
+     width: 400px;
+     border: 3px solid red;
+     background-color:black;
+     color: white;
+     text-align: center;
+ }
+ /* Fin pagina 4 courses */
+ /*  Incio hola pagina  */
+
+ .hola{
+     background-color: aqua;
+     height: 500px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+    text-align: center;
+
+ }
+ .hola1 h1{
+     font-family:'Merriweather',sans-serif ;
+ }
+ .hola{
+    font-family: 'Source Sans Pro', sans-serif;
+ }
+
+ /* Fin hola pagina  */
+
+ /* Inicio media queris */
+
+ @media screen and (min-width: 768px){
+/* inicio nav */
+nav{
+    flex-direction: row;
+}
+/* fin nav  */
+
+
+/* Inicio Index */
+/* header */
+
+header{
+    justify-content: flex-end;
+}
+header div h2{
+    text-align:right;
+ 
+ }
+ header div p{
+     text-align: center;
+ }
+ header div a {
+     font-size: larger;
+     margin-left: 60%;
+ }
+ /* Fin header */
+ /* grid main */
+ .grid-hijo{
+     grid-template-areas: 
+     "work"
+     "about";
+ }
+/* Inicio About me  */
+main .about-flex{
+    justify-content: space-around;
+    flex-direction: row-reverse;
+}
+.about-p{
+    width: 400px;
+}
+/* Fin About me  */
+
+/* Fin index */
+/* Inicio pagina 2 contact me */
+
+main .iframe{
+    flex-direction: row;
+    justify-content: center;
+}
+
+main .iframe iframe{
+    width: 60%;
+    height: 300px;
+}
+
+main .form{
+    flex-direction: row;
+    justify-content:space-around;
+  
+}
+main form{
+    margin: 20px 0;
+    width: 300px;
+}
+main form .solicitud{
+    width: 300px;
+ }
+/* Fin pagina 2 contactme  */
+/* Inicio pagina 3 hobbies  */
+/* cambio tamaño imagen */
+.hobbies .table img{
+    width: 150px;
+    height: 150px;
+}
+/* texto de tabla */
+.hobbies .table p{
+    text-align: justify;
+    font-size: large;
+}
+/* fin de pagina 3 hobbies */
+
+ }
+
+
+
