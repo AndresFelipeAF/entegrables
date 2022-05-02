@@ -3,6 +3,9 @@
     margin: 0;
     padding: 0;
 }
+::-webkit-scrollbar{
+    display:none;
+}
 a{
     text-decoration: none;
 }
@@ -315,6 +318,11 @@ footer li a {
  }
 
  /* Fin hola pagina  */
+
+ /* Inicio Transiciones y animaciones */
+
+
+ /* Fin transacciones y animaciones  */
 
  /* Inicio media queris */
 
