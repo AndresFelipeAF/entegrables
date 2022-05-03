@@ -198,7 +198,7 @@ footer li a {
 /* pagina 2 contactarme */
 /* mapa */
  main .iframe{
-     background-color: midnightblue;
+     background-color: rgb(4, 88, 61);
      display: flex;
      flex-direction: column;
      justify-content: center;
@@ -228,12 +228,12 @@ footer li a {
      justify-content: center;
      align-items: center;
     
-     background-color: aquamarine;
+     background-color: rgb(7, 41, 30);
  }
  main form{
      margin: 15px 0;
      padding: 20px;
-     background-color: rgb(42, 124, 97);
+     background-color: rgb(3, 64, 44);
      border: 3px solid black;
      width: 200px;
  }
@@ -250,7 +250,7 @@ footer li a {
  /* pagina 3 hobbies */
 
  .hobbies{
-     background-color: orange;
+     background-color: grey;
 
  }
  .hobbies h1{
