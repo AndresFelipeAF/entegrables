@@ -195,7 +195,7 @@ footer li a {
 }
 /* fin footer */
 
-/* pagina 2 contact me */
+/* pagina 2 contactarme */
 /* mapa */
  main .iframe{
      background-color: midnightblue;
@@ -274,7 +274,7 @@ footer li a {
  }
 /* Fin pagina 3 hobbies */
 
- /* Incio pagina 4 courses  */
+ /* Incio pagina 4 cursos  */
  .courses{
      background-color: white;
  }
@@ -298,7 +298,7 @@ footer li a {
      color: white;
      text-align: center;
  }
- /* Fin pagina 4 courses */
+ /* Fin pagina 4 cursos */
  /*  Incio hola pagina  */
 
  .hola{
@@ -312,14 +312,83 @@ footer li a {
  }
  .hola1 h1{
      font-family:'Merriweather',sans-serif ;
+     animation-name: entrar_izquierda;
+     animation-iteration-count: 1;
+     animation-timing-function: ease;
+     animation-duration: 2s;
+
+ }
+ .hola1 p{
+    animation-name: entrar_derecha;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-duration: 2s;
  }
  .hola{
     font-family: 'Source Sans Pro', sans-serif;
+    
  }
 
  /* Fin hola pagina  */
 
  /* Inicio Transiciones y animaciones */
+
+
+ nav ul li a:hover{
+
+    color: red;
+    font-size: large;
+ }
+
+ header div a:hover{
+
+    background-color: rgb(4, 4, 17);
+ }
+
+ .about h3:hover{
+     animation-name: notocar;
+     animation-duration: 5s;
+     animation-iteration-count: 1;
+     animation-timing-function: ease;
+ }
+ footer li a:hover{
+
+    color: red;
+    font-size: xx-large;
+/* Hola, una pregunta. Para realizar una animación que yo cree para quee cuando lo toque se realice como lo hice abajo. Porque en este no me funciona? */
+ }
+
+ @keyframes entrar_izquierda{
+     0%{
+         transform: translateX(-500px);
+     }
+     50%{
+         transform: translateX(100px);
+     }
+     100% {
+         transform: translateX(0);
+     }
+ } 
+ @keyframes entrar_derecha{
+    0%{
+        transform: translateX(500px);
+    }
+    50%{
+        transform: translateX(-100px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+@keyframes notocar{
+    0%{
+        transform: translateX(100px);
+    }
+    100%{
+        transform: translate(0);
+    }
+}
+
 
 
  /* Fin transacciones y animaciones  */
