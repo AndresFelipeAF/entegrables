@@ -38,22 +38,7 @@ nav img{
     width: 50px;
     height: 50px;
 }
-nav ul{
-    
-    list-style-type: none;
-    padding-bottom: 10px;
-}
-nav ul li{
-    
-    margin: 5px;
-    display: inline;
 
-}
-
-nav ul li a {
-    color: white;
-    font-size: medium;
-}
 /* Fin navegación */
 /*  Empieza header */
 header{
@@ -172,26 +157,9 @@ footer{
 }
 footer h3{
     text-align: center;
-    color: white;
+    color: rgb(0, 89, 255);
     font-size: medium;
-    padding: 20px;
-    padding-bottom: 10px;
-}
-
-footer ul{
-   padding: 15px;
-    list-style-type: none;
-    text-align: center;
-}
-
-footer li{
-    display:inline;
-    margin: 10px;
-    
-}
-footer li a {
-    color: white;
-    font-size:small;
+    padding-top: 10px;
 }
 /* fin footer */
 
@@ -199,16 +167,8 @@ footer li a {
 /* mapa */
  main .iframe{
      background-color: midnightblue;
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
-     align-items: center;
-     padding: 15px;
  }
- .iframe iframe{
-     width: 300px;
-    height: 200px;
- }
+
  main .iframe p{
      color: white;
      font-size: small;
@@ -235,7 +195,7 @@ footer li a {
      padding: 20px;
      background-color: rgb(42, 124, 97);
      border: 3px solid black;
-     width: 200px;
+     width: 300px;
  }
  main form .solicitud{
     width: 200px;
@@ -247,10 +207,10 @@ footer li a {
  }
  /* fin pagina 2 y formulario  */
 
- /* pagina 3 hobbies */
+ /* pagina 3 Pasatiempos*/
 
  .hobbies{
-     background-color: orange;
+     background-color: grey;
 
  }
  .hobbies h1{
@@ -262,6 +222,7 @@ footer li a {
      padding: 30px;
      display: flex;
      justify-content: center;
+     margin: 0;
  }
 
  .hobbies .table img{
@@ -282,12 +243,6 @@ footer li a {
      text-align: center;
      color: red;
      font-size: 40px;
- }
- .courses .flex-courses{
-     display: flex;
-     flex-wrap: wrap;
-     justify-content: space-around;
-     align-items: center;
  }
  .courses .wrap{
      margin: 15px;
@@ -336,7 +291,7 @@ footer li a {
 
  nav ul li a:hover{
 
-    color: red;
+    color: blue;
     font-size: large;
  }
 
@@ -353,7 +308,7 @@ footer li a {
  }
  footer li a:hover{
 
-    color: red;
+    color: blue;
     font-size: xx-large;
 /* Hola, una pregunta. Para realizar una animación que yo cree para quee cuando lo toque se realice como lo hice abajo. Porque en este no me funciona? */
  }
@@ -433,22 +388,13 @@ main .about-flex{
     flex-direction: row-reverse;
 }
 .about-p{
-    width: 400px;
+    width: auto;
 }
 /* Fin About me  */
 
 /* Fin index */
 /* Inicio pagina 2 contact me */
 
-main .iframe{
-    flex-direction: row;
-    justify-content: center;
-}
-
-main .iframe iframe{
-    width: 60%;
-    height: 300px;
-}
 
 main .form{
     flex-direction: row;
@@ -457,7 +403,7 @@ main .form{
 }
 main form{
     margin: 20px 0;
-    width: 300px;
+    width: 400px;
 }
 main form .solicitud{
     width: 300px;
