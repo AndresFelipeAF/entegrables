@@ -26,12 +26,12 @@ a{
 /* fin grid */
 /* Inicio navegación  */
 nav{
+    align-items: right!important;
+}
+nav a {
     grid-area: nav;
-    background-color:black;
-    flex-direction: column;
-    display: flex;
-    justify-content:space-between;
-    align-items: center;
+    color:blue !important;
+
 }
 nav img{
     margin: 10px;
